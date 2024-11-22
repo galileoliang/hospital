@@ -1,36 +1,41 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>耕莘長照研究計畫</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <header>
+    <header class="header">
   <h1>耕莘長照研究計畫</h1>
   <h2>長者手指關節靈活度田野調查資料</h2>
   </header>
-  <main>
-    <section id="dt">
+    <main class="main">
+      <section id="dt" class="section">
+        <!-- Content -->
       <h3>日期與時間</h3>
       <p>日期:<span id="date"></span><br/>時間:<span id="time"></span></p>
     </section>
-    <section class="people">
+      <section class="people-section">
+        <!-- Content -->
       <h3>基本資料</h3>
-      <p>姓名:<input type="text"></p>
+      <p>姓名:<input type="text" name="" id="people"></p>
     </section>
-    <section class="sex">
+      <section class="sex-section">
+        <!-- Content -->
       <h3>性別</h3>
-      <p>男:<input type="radio" name="sex"> 女:<input type="radio" name="sex"></p>
+      <p>男:<input type="radio" name="sex" id="sex" value="Male"> 女:<input type="radio" name="sex" id="sex" value="Female"></p>
     </section>
-    <section class="hand">
+      <section class="hand-section">
+        <!-- Content -->
       <h3>選擇手</h3>
-      <p>左手:<input type="radio" name="hand"> 右手:<input type="radio" name="hand"></p>
+      <p>左手:<input type="radio" name="hand" id="hand" value="Left"> 右手:<input type="radio" name="hand" id="hand" value="Right"></p>
     </section>
-    <section class="finger">
+      <section class="finger-section">
+        <!-- Content -->
       <h3>選擇手指</h3>
-    <select>
+    <select id="finger">
         <option>大拇指</option>
         <option>食指</option>
         <option>中指</option>
@@ -38,11 +43,13 @@
         <option>小指</option>
     </select>
     </section>
-    <section class="hand_image">
+      <section class="hand_image-section">
+        <!-- Content -->
       <h3>手的圖片</h3>
       <img src="images/hand.jpg" alt="hand image">
     </section>
-    <section class="test_area">
+    <section class="test_area-section">
+        <!-- Content -->
       <h3>測試區</h3>
       <p>請以最快的速度點擊紅色區域</p>
     </section>

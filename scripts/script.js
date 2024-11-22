@@ -19,12 +19,13 @@ function updateDateTime() {
  updateDateTime();
 
  // Get the test_area element
- const testArea = document.querySelector('.test_area');
+ const testArea = document.querySelector('.test_area-section');
  const dateElement = document.getElementById('date');
  const timeElement = document.getElementById('time');
- const nameInput = document.querySelector('.people input[type="text"]');
- const sexRadios = document.querySelectorAll('.sex input[type="radio"]');
- const fingerSelect = document.querySelector('.finger select');
+ const nameInput = document.getElementById('people');
+ const sexRadios = document.getElementById('sex');
+ const handSelect = document.getElementById('hand');
+ const fingerSelect = document.getElementById('finger');
 
  // Initialize variables
  let clickCount = 0;
@@ -34,6 +35,7 @@ function updateDateTime() {
 
  // Add event listener to test_area
  testArea.addEventListener('click', () => {
+  
    // If timer is not running, start it
    if (timerId === 0) {
      startTime = new Date().getTime();
@@ -50,17 +52,20 @@ function updateDateTime() {
 
          // Get user input values
          const testName = nameInput.value;
-         const testSex = Array.from(sexRadios).find(radio => radio.checked).nextSibling.textContent;
+         const testSex = sexRadios.value;
+         const testHand = handSelect.value;
          const testFinger = fingerSelect.value;
-
+    
          // Display result
          testArea.innerHTML = `
            <p>日期: ${dateElement.innerText}</p>
            <p>時間: ${timeElement.innerText}</p>
            <p>姓名: ${testName}</p>
            <p>性別: ${testSex}</p>
+           <p>左右: ${testHand}</p>
            <p>指頭: ${testFinger}</p>
            <p>5秒鐘點了 ${clickCount} 次</p>
+           <button>儲存資料</button>
          `;
          clickCount = 0;
        }
