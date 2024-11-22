@@ -1,0 +1,55 @@
+h1{
+    text-align: center;
+    color: blue;
+  }
+  h2{
+    text-align: center;
+    color: brown;
+  }
+  #dt{
+    background-color: bisque;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
+  .people{
+    background-color: rgb(196, 255, 209);
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
+  .sex{
+    background-color:blueviolet;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
+  .hand{
+    background-color:darkgoldenrod;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
+  img{
+    width: 70%;
+
+  }
+  .hand_image{
+    background-color:bisque;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
+  .finger{
+    background-color:black;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
+  .test_area{
+    background-color:crimson;
+    width: 50%;
+    height: 280px;
+    margin: auto;
+    text-align: center;
+  }
